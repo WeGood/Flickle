@@ -1,0 +1,17 @@
+<div id="maximage">
+	
+	<% @output.each { |element| %>
+
+	<%= image_tag element %> 
+	
+	<% } %>
+	
+	
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		// Trigger maximage
+		jQuery('#maximage').maximage();
+	});
+</script>
