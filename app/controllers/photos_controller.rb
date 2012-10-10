@@ -4,8 +4,8 @@ require 'json'
 class PhotosController < ApplicationController
 
 	# Get your app key and secret from the Dropbox developer website
-	APP_KEY = ''
-	APP_SECRET = ''
+	APP_KEY = 'dhpodrtke4gs4bf'
+	APP_SECRET = '9ybjatp2dwchnhq'
 
 	# ACCESS_TYPE should be ':dropbox' or ':app_folder' as configured for your app
 	ACCESS_TYPE = :app_folder
