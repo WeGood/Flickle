@@ -1,0 +1,58 @@
+2012-10-11T07:45:29+00:00 heroku[router]: GET arcane-caverns-3464.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=6ms status=500 bytes=643
+2012-10-11T07:46:20+00:00 heroku[router]: GET arcane-caverns-3464.herokuapp.com/photos/authorise dyno=web.1 queue=0 wait=0ms service=8ms status=500 bytes=643
+2012-10-11T15:10:07+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 4069`
+2012-10-11T15:10:13+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-10-11T15:10:13+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-10-11T15:10:16+00:00 app[web.1]: [2012-10-11 15:10:16] INFO  WEBrick 1.3.1
+2012-10-11T15:10:16+00:00 app[web.1]: [2012-10-11 15:10:16] INFO  WEBrick::HTTPServer#start: pid=2 port=4069
+2012-10-11T15:10:16+00:00 app[web.1]: [2012-10-11 15:10:16] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-10-11T15:10:17+00:00 heroku[web.1]: State changed from starting to up
+2012-10-11T15:10:18+00:00 app[web.1]: => Rails 3.2.3 application starting in production on http://0.0.0.0:4069
+2012-10-11T15:10:18+00:00 app[web.1]: => Call with -d to detach
+2012-10-11T15:10:18+00:00 app[web.1]: => Booting WEBrick
+2012-10-11T15:10:18+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-10-11T15:10:18+00:00 app[web.1]: 
+2012-10-11T15:10:18+00:00 app[web.1]: Started GET "/" for 82.31.156.186 at 2012-10-11 15:10:18 +0000
+2012-10-11T15:10:18+00:00 app[web.1]: 
+2012-10-11T15:10:19+00:00 heroku[router]: GET arcane-caverns-3464.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=762ms status=500 bytes=643
+2012-10-11T15:10:19+00:00 app[web.1]: 
+2012-10-11T15:10:19+00:00 app[web.1]: ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:67:in `rescue in call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:61:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:398:in `retrieve_connection'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__1213254608470761418__call__3012235093460488557__callbacks'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+2012-10-11T15:10:19+00:00 app[web.1]: 
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+2012-10-11T15:10:19+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+2012-10-11T15:10:19+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+2012-10-11T15:10:19+00:00 app[web.1]: 
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+2012-10-11T15:10:19+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+2012-10-11T15:10:20+00:00 heroku[router]: GET arcane-caverns-3464.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=18ms status=200 bytes=0

@@ -24,6 +24,7 @@ gem 'jquery-rails', '2.1.3'
 gem 'dropbox-sdk', '1.5.1'
 gem 'oauth', '0.4.7'
 gem 'json', '1.7.5'
+gem 'pg'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
