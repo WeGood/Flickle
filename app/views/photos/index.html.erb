@@ -1,13 +1,16 @@
 <div id="maximage">
 	
 	<% @output.each { |element| %>
-
-	<%= image_tag element %> 
-	
+			<div>
+			<%= image_tag element %> 
+			<div class="botright"><p><%= element.gsub(/\.[a-z]*/, ' ').gsub('_', ' ').capitalize %></p></div>
+			</div>
 	<% } %>
 	
 	
 </div>
+
+
 
 <script type="text/javascript" charset="utf-8">
 	$(function(){
